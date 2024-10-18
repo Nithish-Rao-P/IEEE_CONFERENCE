@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+body {
+    text-align: center;
+    overflow-x: hidden;
+    font-family: "Agdasima", sans-serif;
+    margin:0;
+    padding: 0;
+    color: #d7e4ef;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.em {
+    font-weight: bolder;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Slight background for better readability */
+    max-width: 100vw;
+    position: fixed;
+    /* Fix the navbar to the top */
+    top: 0;
+    width: 100%;
+    /* Ensure it spans the full width */
+    z-index: 1000;
+    /* Ensure it's above other elements */
+    transition: background-color 0.3s ease;
+    /* Add transition for better UX */
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    font-size: 17px;
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link:focus {
+    color: white;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+pre {
+    color: white;
+}
+
+#ieee-logo {
+    width: auto;
+    height: 50px;
+    margin: 0;
+}
+
+
+
+.background {
+    background-image: url('/images/cover_image.png');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px; /* Push the content below the navbar */
+}
+/* conference */
+.conference {
+    /* padding: 10%; */
+    color: white;
+    line-height: 2;
+
+    font-weight: bolder;
+
+
+}
+
+.title {
+    margin-top: 5rem;
+    color: white;
+    line-height: 2;
+    font-weight: bolder;
+}
+
+.title h1,
+.title h2 {
+    margin-top: 0;
+    /* Set margin-top to zero for h1 and h2 */
+    margin-bottom: 0.5rem;
+    /* Adjust margin-bottom as needed */
+}
+
+.header {
+    font-size: 2.75rem;
+}
+
+
+.subheader {
+    margin-top: 2rem;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+/* CHECK */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gold;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
+
+.btn {
+    width: 100%;
+    text-align: center;
+    margin: .7rem;
+}
+
+
+/* about */
+
+#about {
+    text-align: justify;
+    color: black;
+    margin: 5% 20%;
+    font-size: 1.2rem;
+    border: 5px solid goldenrod;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+#about nav {
+    border-radius: 20px;
+}
+
+.tab-pane {
+    margin-top: 1.3rem;
+}
+
+span {
+    padding-left: 100px;
+}
+
+.logo {
+    margin-top: .75rem;
+}
+
+.card {
+    border: 6px solid goldenrod;
+    height: 31rem;
+    border-radius: 20px;
+}
+
+.bottom-half {
+    height: 15.25rem;
+    line-height: 1;
+}
+
+#original-call-for-paper {
+    font-size: 1.25rem;
+    margin: 50px 0;
+    /* background-color: #810081; */
+    color: black;
+}
+
+/* COMMITTEE */
+h2,
+h3 {
+    color: #810081;
+}
+
+
+
+/* call for papers */
+#call-for-paper {
+    /* font-size: 1.25rem; */
+    line-height: 1.75;
+    margin: 50px 0;
+    color: black;
+}
+
+.call-for-paper-div {
+    padding-top: 1rem;
+    padding-bottom: 50px;
+}
+
+.call-for-paper-contents {
+    text-align: center justify;
+    margin-top: 1rem;
+}
+
+/* registration */
+#registration {
+    width: 60%;
+    line-height: 2;
+    font-size: 1.25rem;
+    padding: 2% 5%;
+    margin: 2rem auto;
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 20px;
+    color: black;
+}
+
+.registration-content p {
+    padding-top: 20px;
+
+}
+
+.registration-content {
+    margin: 30px 0;
+}
+
+#registration:hover {
+    transform: scale(1.025);
+}
+
+/* committee */
+.keynote {
+    margin: auto 15rem;
+}
+
+.technical-team {
+    width: 90%;
+    padding: 2% 5%;
+    margin: 2rem auto;
+    line-height: 1.75;
+    border: 7.5px solid goldenrod;
+    border-radius: 20px;
+    list-style-position: inside;
+    color: black;
+    background-color: white;
+}
+
+.card:hover,
+iframe:hover {
+    transform: scale(1.025);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button img {
+    height: 20px;
+    width: 20px;
+}
+
+.technical-team:hover {
+    transform: scale(1.025);
+}
+
+
+/* FOOTER SECTION */
+
+#contact-us {
+    background-color: #810081;
+    color: white;
+    padding: 1% 8%;
+    margin-top: 30px;
+    border-top: 10px solid goldenrod;
+}
+
+.contact-names {
+    line-height: 1.5;
+    padding: 2% 17%;
+    font-size: 1.25rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.dev-names {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.icons {
+    font-size: 2rem;
+    padding: 2% 1.5%;
+    color: white;
+}
+
+.footer-heads {
+    margin-top: 1.5rem;
+}
+
+/* hr{
+    border-style: dotted none none ;
+    height: 0px;
+    width: 5%;
+    margin: auto;
+    border-width: 10px ;
+    border-color:goldenrod
+} */
+.advisory-team {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2% 5%;
+    line-height: 1.75;
+    border: 7.5px solid goldenrod;
+    border-radius: 20px;
+    list-style-position: inside;
+    color: black;
+    background-color: white;
+}
+
+.advisory-team:hover {
+    transform: scale(1.025);
+}
+
+#keynote-card {
+    height: 35rem;
+}
+
+.people-hr {
+    border-style: dotted none none;
+    height: 0px;
+    width: 5%;
+    margin: auto;
+    border-width: 10px;
+    border-color: goldenrod;
+}
+
+.card-header {
+    border-bottom: 3px solid goldenrod;
+    color: #810081;
+}
+
+.conference .col-lg-6 {
+    margin-top: 2.6rem;
+}
+
+h4 {
+    margin-top: 2rem;
+}
+
+.hr-committee {
+    border-width: 100%;
+    border-style: solid;
+}
+
+
+
+@media screen and (max-width:1335px) {
+    hr {
+        width: 25%;
+    }
+
+    .contact-names {
+        font-size: 2rem;
+    }
+
+    .header {
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width:993px) {
+
+    /* .header
+    {
+        font-size: 20px;
+    } */
+    /* .title {
+        width: 75vw;
+    } */
+
+    .date {
+        font-size: 1.25rem;
+    }
+
+    .rajalakshmi {
+        height: 50.5px;
+        width: auto;
+    }
+
+    .logo {
+        position: relative;
+        top: 15%;
+        height: 150px;
+        width: auto;
+
+    }
+
+    .navbar-nav {
+        width: 15rem;
+        border-radius: 2rem;
+        border-top-right-radius: 0;
+        height: 22rem;
+        font-size: 16px;
+        text-align: center;
+        background-color: rgb(129, 0, 129);
+        position: absolute;
+        right: 0;
+
+        .nav-link {
+            color: white;
+        }
+    }
+}
+
+
+
+
+.button {
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: block;
+    margin: auto;
+    padding: 1%;
+    background: linear-gradient(to right, goldenrod 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.button:hover {
+    background-position: left bottom;
+}
+
+.text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+    transition: all .6s ease-out;
+    display: block;
+}
+
+.reg-links:hover {
+    .text a {
+        color: white;
+    }
+}
+
+.reg-links {
+    display: flex;
+
+
+}
+
+.text a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width : 800px) {
+    .keynote {
+        margin: auto 2rem;
+    }
+
+    #keynote-card {
+        height: auto;
+    }
+
+    #about {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    #committee .row .col-lg-4 {
+        margin-top: 10px;
+    }
+
+    footer .contact-names {
+        padding: 0;
+        font-size: 1rem;
+        gap: 0.25rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #registration {
+        width: 90%;
+        font-size: 1.15rem;
+    }
+
+    #paper-sub {
+        margin-top: 2rem;
+    }
+
+    .input-group label {
+        text-align: left;
+    }
+
+    .register-content {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (width < 1300px) {
+    .header {
+        font-size: 2.5rem;
+    }
+
+    .subheader {
+        font-size: 1.85rem;
+    }
+
+}
+
+@media screen and (width < 600px) {
+    .title {
+        width: 100vw;
+    }
+
+    .header {
+        font-size: 1.25rem;
+        font-weight: bolder;
+        line-height: 1.5;
+    }
+
+    .subheader {
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .bottom-half {
+        margin-top: 1rem;
+        height: auto;
+    }
+}
+
+@media screen and (width<680px) {
+    .header {
+        font-size: 2rem;
+    }
+
+    .subheader {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (width<544px) {
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .subheader {
+        font-size: 1rem;
+    }
+
+    .title {
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (width<1036px) {
+    #ieee-logo {
+        height: 30px;
+        width: auto;
+    }
+}
