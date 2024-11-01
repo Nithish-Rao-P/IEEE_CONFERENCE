@@ -1,0 +1,122 @@
+body
+{
+    font-family: 'Outfit';
+}
+h4{
+    color:  #810081; 
+}
+#paper-sub{
+    padding: 2% 10%;
+}
+.paper-content{
+    font-size: 18px;
+    text-align: justify ;
+    margin-left: 3%;
+}
+
+#ieee-logo {
+    width: auto;
+    height: 50px;
+    margin: 0;
+}
+
+
+
+.general-info
+{
+    margin-top: 3rem;
+}
+
+.general-info , .plagarism , .publication{
+    
+    overflow-x: hidden;
+    width: 100%;
+}
+.paper-content a {
+    word-wrap: break-word;
+}
+
+nav{
+    background-color: rgb(129, 0, 129);
+   }
+   .navbar
+   {
+       padding: 0;
+   }
+   .navbar-brand{
+       color: white;
+   }
+   
+   .navbar-collapse
+   {
+       flex-grow: 0;
+   }
+   
+   .nav-link
+   {
+       font-size: 17px;
+       color: white;
+   } 
+   .nav-link:hover{
+       color: white;
+   }
+   .nav-link:focus
+   {
+       color: white;
+   }
+   .navbar-toggler
+   {
+       color: white;
+   }
+   pre{
+       color: white;
+   }
+
+
+
+   /* #contact-us
+   {
+       background-color: #810081;
+       color: white;
+       padding: 1% 8%;
+       margin-top: 30px;
+       border-top: 10px solid goldenrod;
+       text-align: center;
+   }
+   
+   .contact-names
+   {
+   line-height: 1.5;
+   padding: 2% 17%;
+   font-size: 1.25rem;
+   display: flex;
+   gap: 2rem;
+   }
+    */
+   .dev-names
+   {
+   padding-top: 2rem;
+   text-align: center;
+   font-size: 1.25rem;
+   }
+   
+   .icons
+   {
+       font-size: 2rem;
+       padding: 2% 1.5%;
+       color: white;
+   }
+   
+   .footer-heads
+   {
+   margin-top: 1.5rem;
+   }
+
+   @media screen and (width<1036px) 
+{
+   #ieee-logo
+   {
+    height: 30px;
+    width: auto;
+   }
+}

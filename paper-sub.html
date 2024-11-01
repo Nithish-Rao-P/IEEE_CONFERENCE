@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Submission</title>
+     <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
+    <link rel="stylesheet" href="paper-sub.css">
+  <link rel="stylesheet" href="css/style.css">
+
+    <script>
+    document.querySelectorAll('.nav-link').forEach((anchor)=>{
+      anchor.addEventListener('click', function (e) {
+        console.log("hello");
+        if(this.getAttribute('href').charAt(0)!=='#')
+        {
+          return;
+        }
+        e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          console.log(targetId);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+              const offsetTop = targetElement.offsetTop - 60; // Adjust offset as needed
+              window.scrollTo({
+                  top: offsetTop,
+                  behavior: 'smooth'
+              });
+          }
+      })
+  });
+</script>
+</head>
+<body>
+   
+        
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.rajalakshmi.org/">
+            <img class="rajalakshmi" src="images/recc.png" alt="REC" height="50px" width="auto">
+            <img src="images/ieee.jpeg" alt="" class="navbar-brand" id="ieee-logo" style="margin-left: 5px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link hover-underline-animation" href="index.html#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-underline-animation" href="index.html#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-underline-animation" href="index.html#committee">Committee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-underline-animation" href="index.html#original-call-for-paper">Call for Papers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-underline-animation" href="paper-sub.html">Paper Submission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-underline-animation" href="index.html#registration">Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-underline-animation" href="#contact-us">Contact Us</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <section id="paper-sub">
+        <div class="general-info">
+            <h1 style="text-align: center;color: #810081;">PAPER SUBMISSION GUIDELINES</h1>
+        <h4>GENERAL INFORMATION</h4>
+        <p class="paper-content">The original unpublished Technical Papers, Articles and Working Papers having maximum length 6 pages  on the topics related to the theme of the conference are 
+            invited for presentation/publication in the  conference proceedings </p>
+        <ul>
+            <li class="paper-content"><p>Kindly ensure that your paper is formatted as per Template (not exceeding 6 pages) single-spaced  double-column pages using 10-point size font on 8.5×11 inch pages (IEEE conference style),  including authors' affiliations, figures, tables, and 
+                references. Additional pages per paper above  the 6 pages limit will be charged.  </p></li>
+            <li class="paper-content"><p>Paper Template Link : <a target="_blank" href="https://www.ieee.org/conferences/publishing/templates.html">https://www.ieee.org/conferences/publishing/templates.html</a></p></li>
+            <li class="paper-content"><p>Paper Submission Link : <a target="_blank" href="https://cmt3.research.microsoft.com/
+                ICCDS2024">https://cmt3.research.microsoft.com/
+                ICCDS2024</a></p></li>
+            <li class="paper-content"><p>All submissions will undergo a double-blind peer review by the team of peer reviewers based on  originality, relevance to the conference theme, technical strength, significance, quality of results,  and organization 
+                and clarity of presentation of the paper.</p></li>
+       </ul>
+    </div>
+    <div class="plagarism">
+        <h4>PLAGARISM</h4>
+        <ul>
+            <li class="paper-content"><p >Acceptable plagiarism range is less than 10% 
+                (excluding references) with 0% AI Plagiarism.</p></li>
+            <li class="paper-content"><p >Plagiarism, image manipulation, and data fabrication are not tolerated.</p></li>
+            <li class="paper-content"><p >Plagiarism includes copying research ideas, text, images, or data from another source/research literature, even from the author’s 
+                own publications without giving any credit to the original source</p></li>
+            <li class="paper-content"><p >Text copied from another source must be reused within quotations, and the original 
+                source must be referenced. If the design of a research, or the structure or language of the 
+                publication, was inspired by previous research, the corresponding works must be explicitly cited.</p></li>
+                <li class="paper-content"><p >If you are using any copyrighted material, you should acquire prior permission from the copyright  holder. </p></li>
+                <li class="paper-content"><p >If plagiarism is detected during the peer review process, the manuscript will be rejected. If plagiarism is detected after publication, we will retract the paper.</p></li>
+                    <li class="paper-content"><p >Any form of self-plagiarism or plagiarism from others' work(s) should not be there in the article. </p></li>
+                        <li class="paper-content"><p >If any model / concept / figure / table / data / conclusive comment by any previously published 
+                             work is used in your article, you should properly cite a reference to the original work.</p></li>
+                                 
+        </ul> 
+        <p class="paper-content">All questions about submissions can be sent as mail to : <a href="iccds24@rajalakshmi.edu.in">iccds24@rajalakshmi.edu.in</a> </p>
+        
+
+    </div>
+    <div class="publication">
+        <h4>PUBLICATION</h4>
+        <p class="paper-content">The accepted and presented papers of ICCDS- 2024 
+            will be forwarded for possible inclusion in the IEEE  Digital Xplore after review by IEEE
+
+        </p>
+
+    </div>
+        
+
+
+    </section>
+    <footer id="contact-us" class="reveal">
+        <div class="container footer-info">
+          <div class="row" style="width: 100%;">
+            <div class="col-lg-6">
+              <h4 style="color: white;" class="footer-heads">Reach Us</h4>
+              <h5 style="margin-top: 1.25rem;"><b> Rajalakshmi Engineering College</b></h5>
+              <p style="font-size: 1.2rem;">An Autonomous institution <br> Affiliated to Anna University, Chennai
+                <br>Rajalakshmi Nagar, <br> Thandalam, <br> Chennai - 602105.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h4 style="color: white;" class="footer-heads">Contact Us</h4>
+              <div class="contact-names">
+                <p ><b>Dr.N.Duraimurugan</b>,<br>
+                  Associate Professor,<br>
+                  Department of CSE<br>
+                  <a href="tel:9944915267" style="text-decoration: none; color: white;"><i class="fa-solid fa-phone"
+                    style="padding-right: .58rem;"></i> 9944915267</a>
+                </p>
+                <p ><b>Dr.K.Ananthajothi,</b><br>
+                        Professor,<br>
+                  Department of CSE<br>
+                  <a href="tel:9994075769" style="text-decoration: none; color: white;"><i class="fa-solid fa-phone"
+                    style="padding-right: .58rem;"></i>9994075769</a>
+                </p>
+              </div>
+            </div>    
+          </div>
+        </div>
+    
+        <a href="https://instagram.com/rec_chennai" target="blank" style="text-decoration: none;"> <i
+            class="icons fa-brands fa-instagram"></i> </a>
+        <a href="mailto:iccds@rajalakshmi.edu.in" style="text-decoration: none;" target="blank"> <i
+            class="icons fa-solid fa-envelope"></i> </a>
+        <a href="https://www.linkedin.com/school/rajalakshmi-engineering-college/" target="blank"
+          style="text-decoration: none;"> <i class="icons fa-brands fa-linkedin"></i> </a>
+        <a href="https://maps.app.goo.gl/AfS8xrMZ1v4fxAi16" target="blank"
+          style="text-decoration: none;"> <i class="icons fa-solid fa-location-dot"></i></a>
+    
+        <p>© Copyrights 2024. All rights reserved | REC</p>
+    
+      </footer>
+      
+        <!--footer ends-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     
+</body>
+</html>
