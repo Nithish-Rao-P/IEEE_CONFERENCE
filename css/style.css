@@ -98,22 +98,21 @@ nav.scrolled {
 /* General Section Styles */
 section {
   padding: 60px 20px;
-  margin: 20px 30px;
-  border-radius: 8px;
+  margin: 10px 10px;
+  border-radius: 4px;
   background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(39, 39, 39, 0.6));
 }
 
 /* About Section */
 #about {
   text-align: justify;
-  border: 3px solid #5a33a2;
+  border: 3px solid #ffffff;
 }
 
-/* Call for Papers Section */
-#original-call-for-paper {
-  color: #333;
-}
+
 
 /* Committee Section */
 h2,
@@ -123,7 +122,7 @@ h3 {
 
 /* Registration Section */
 #registration {
-  border: 2px solid #6f42c1;
+  border: 2px solid #ffffff;
 }
 
 /* Button Styles */
@@ -259,6 +258,13 @@ footer {
   z-index: -100;
   animation: steam 25s linear infinite;
 } */
+
+#registration{
+  right: inherit;
+  text-align: center;
+  max-width: 500px;
+  margin: 20px auto;
+}
 
 @keyframes steam {
   0% {
