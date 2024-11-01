@@ -292,7 +292,8 @@ footer {
 /* Main Footer Styling */
 #contact-us {
   background-color: #222;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 5px;
   color: white;
   text-align: center;
 }
