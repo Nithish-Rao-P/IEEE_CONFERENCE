@@ -286,3 +286,94 @@ footer {
 #con{
   min-height: 590px;
 }
+
+
+
+/* Main Footer Styling */
+#contact-us {
+  background-color: #222;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-heads {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FEC20E;
+  margin-bottom: 10px;
+}
+
+.footer-hr {
+  width: 80%;
+  height: 3px;
+  background-color: #FEC20E;
+  margin: 10px 0 20px;
+}
+
+/* Reach Us and Contact Us Div Styling */
+#r {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+#col-lg {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+  background-color: rgba(72, 70, 70,0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.col-lg p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.contact-names p, .contact-names a {
+  color: #bbb;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.contact-names a:hover {
+  color: #FEC20E;
+}
+
+/* Social Media Icons */
+.icons {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.icons:hover {
+  color: #FEC20E;
+}
+
+/* Copyright Text */
+#contact-us p {
+  color: #aaa;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+      gap: 30px;
+  }
+}
