@@ -1,0 +1,259 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: linear-gradient(0deg, #968f8f, #9a9aa3); /* Light background for contrast */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: rgba(0, 0, 0, 0.7); /* Purple background */
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: #ff5733; /* Change to your desired color */
+}
+
+nav.scrolled {
+  background-color: rgba(
+    111,
+    66,
+    193,
+    0.4
+  ); /* Slightly transparent on scroll */
+}
+
+.navbar-brand,
+.nav-link {
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffdd57; /* Gold color on hover */
+}
+
+/* Hero Section */
+
+.title {
+  position: relative;
+  z-index: 1;
+}
+
+.title h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Animation for Sections */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* General Section Styles */
+section {
+  padding: 60px 20px;
+  margin: 20px 30px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+#about {
+  text-align: justify;
+  border: 3px solid #5a33a2;
+}
+
+/* Call for Papers Section */
+#original-call-for-paper {
+  color: #333;
+}
+
+/* Committee Section */
+h2,
+h3 {
+  color: #6f42c1;
+}
+
+/* Registration Section */
+#registration {
+  border: 2px solid #6f42c1;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5a32a5; /* Darker purple on hover */
+}
+
+/* Footer Section */
+footer {
+  background-color: #6f42c1;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.icons {
+  font-size: 2rem;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .title h2 {
+    font-size: 2rem;
+  }
+}
+
+#myBtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.image-container {
+  overflow: hidden;
+  width:100vw; /* Container width */
+  height:100vh; /* Container height */
+  margin: 0 auto; /* Center the container */
+}
+
+.images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.images img {
+  width: 100vw; /* Make each image take up 100% of the container width */
+  height: 87vh;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.nav-button {
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+#home {
+  padding: 0;
+  margin: 0;
+  border-radius: 0px;
+  background-color: white;
+}
+
+.card {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 15px;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  position: relative;
+  font-weight: 900;
+  transition-duration: 0.2s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(39, 39, 39, 0.6));
+}
+
+/* .card:before, .card:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #8200fb, #ae00ff, #c800ff,#dd00ff, #ff00cc, #fb0094, 
+  #8200fb, #ae00ff, #c800ff,#dd00ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -100;
+  animation: steam 25s linear infinite;
+} */
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.card:after {
+  filter: blur(7px);
+}
