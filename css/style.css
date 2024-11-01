@@ -228,7 +228,6 @@ footer {
 }
 
 .card {
-  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,4 +281,8 @@ footer {
 
 .card:after {
   filter: blur(7px);
+}
+
+#con{
+  min-height: 590px;
 }
